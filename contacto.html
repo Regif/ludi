@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contacto - Ludi</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>Ludi</h1>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Juegos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="page-header">
+                <h1>Contacto</h1>
+                <p>Visitanos, escribinos o llamanos. Estamos acá para ayudarte</p>
+            </section>
+
+            <section class="info-contacto">
+                <h2>¿Dónde encontrarnos?</h2>
+                
+                <div class="contacto-grid">
+                    <div class="info-item">
+                        <h3>📍 Nuestra tienda</h3>
+                        <p><strong>Thames 1234, Palermo</strong><br>
+                        Ciudad Autónoma de Buenos Aires<br>
+                        A 2 cuadras de la estación Palermo</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>🕒 Horarios de atención</h3>
+                        <p><strong>Martes a sábados:</strong> 11:00 a 20:00hs<br>
+                        <strong>Domingos:</strong> 14:00 a 19:00hs<br>
+                        <strong>Lunes:</strong> Cerrado</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>📱 Contacto directo</h3>
+                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5491155551234" target="_blank">+54 9 11 5555-1234</a><br>
+                        <strong>Email:</strong> <a href="mailto:info@ludi.com.ar" class="btn-email">info@ludi.com.ar</a><br>
+                        <strong>Instagram:</strong> <a href="https://instagram.com/ludi.juegos" target="_blank">@ludi.juegos</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NUEVO LAYOUT: Formulario y Mapa lado a lado -->
+            <section class="contacto-layout">
+                <!-- Formulario a la izquierda -->
+                <div class="formulario-contacto">
+                    <h2>✉️ Envíanos un mensaje</h2>
+                    <p>¿Tenés alguna pregunta sobre un juego? ¿Querés consultar stock? ¡Escribinos!</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Seleccioná el motivo</option>
+                                <option value="consulta-stock">Consulta de stock</option>
+                                <option value="juego-demanda">Juego a demanda</option>
+                                <option value="presupuesto">Solicitar presupuesto</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos en qué podemos ayudarte..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-cta">Enviar mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Mapa a la derecha -->
+                <div class="ubicacion-mapa">
+                    <h2>🗺️ ¿Cómo llegar?</h2>
+                    <p>Estamos en el corazón de Palermo, cerca de bares, restaurantes y otras tiendas. ¡Perfecto para hacer una salida completa!</p>
+                    
+                    <div class="mapa-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016168909334!2d-58.42847362425308!3d-34.59728037295154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb590c1c4e92b%3A0x68e8a1a8f1b5f5a!2sThames%201234%2C%20C1414DMT%20CABA!5e0!3m2!1ses!2sar!4v1703001234567!5m2!1ses!2sar" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <div class="transporte-info">
+                        <h3>🚌 Cómo llegar</h3>
+                        <div class="transporte-grid">
+                            <div class="transporte-item">
+                                <strong>🚇 Subte:</strong> Línea D, estación Palermo (2 cuadras)
+                            </div>
+                            <div class="transporte-item">
+                                <strong>🚌 Colectivos:</strong> 15, 29, 36, 41, 55, 93, 111
+                            </div>
+                            <div class="transporte-item">
+                                <strong>🚗 Auto:</strong> Estacionamiento en la zona (pago)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video-institucional">
+                <h2>🎬 Conocé nuestra tienda</h2>
+                <p>Dale play para conocer nuestro espacio, ver algunos de nuestros juegos favoritos y conocer al equipo de Ludi.</p>
+                
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="400" 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="Video institucional Ludi - Tienda de juegos de mesa" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <p class="video-descripcion">En este video te mostramos nuestra colección, el proceso de selección de juegos y cómo trabajamos para traerte los mejores títulos del mundo.</p>
+            </section>
+
+            <section class="cta-final">
+                <h2>🎲 ¿Listo para visitarnos?</h2>
+                <p>Vení a conocer nuestra tienda en persona. Te aseguramos que vas a encontrar tu próximo juego favorito.</p>
+                
+                <div class="cta-buttons">
+                    <a href="mailto:info@ludi.com.ar?subject=Consulta desde la web&body=Hola! Quisiera consultar sobre..." class="btn-cta">Escribinos un email</a>
+                    <a href="https://wa.me/5491155551234?text=Hola! Quería consultar sobre juegos..." target="_blank" class="btn-secundario">WhatsApp directo</a>
+                    <a href="productos.html" class="btn-secundario">Ver todos los juegos</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Ludi. Todos los derechos reservados.</p>
+                <div class="redes">
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
