@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito - Ludi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sansita:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo"><h1>Ludi</h1></div>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Juegos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="nav-cart">
+  <a href="carrito.html" title="Ver carrito">🛒</a>
+</div>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="page-header">
+        <h1>🛒 Mi Carrito</h1>
+        <p>Revisá tus juegos antes de finalizar la compra</p>
+      </section>
+
+      <div class="cart-content">
+        <!-- Si el carrito estuviera vacío -->
+        <!-- <div class="cart-empty">
+          <div class="cart-empty-icon">🎲</div>
+          <h2>Tu carrito está vacío</h2>
+          <p>¡Descubrí nuestra increíble colección de juegos de mesa!</p>
+          <a href="productos.html" class="btn-cta">Ver todos los juegos</a>
+        </div> -->
+
+        <!-- Lista de productos en el carrito -->
+        <div class="cart-item">
+          <div class="item-image">
+            <img src="imagenes/everdell.jpg" alt="Everdell" />
+          </div>
+          <div class="item-details">
+            <div class="item-name">Everdell</div>
+            <div class="item-description">Un hermoso juego de construcción de ciudades con criaturas del bosque</div>
+            <div class="item-price">$105.000</div>
+          </div>
+          <div class="quantity-display">Cantidad: 1</div>
+        </div>
+
+        <div class="cart-item">
+          <div class="item-image">
+            <img src="imagenes/FT_Flamecraft.jpg" alt="Flamecraft" />
+          </div>
+          <div class="item-details">
+            <div class="item-name">Flamecraft</div>
+            <div class="item-description">Juego encantador sobre dragones artesanos</div>
+            <div class="item-price">$67.000</div>
+          </div>
+          <div class="quantity-display">Cantidad: 1</div>
+        </div>
+
+        <!-- Resumen de compra -->
+        <div class="cart-summary">
+          <h2>📋 Resumen de compra</h2>
+
+          <div class="summary-row">
+            <span>Subtotal:</span>
+            <span>$172.000</span>
+          </div>
+          <div class="summary-row">
+            <span>Envío:</span>
+            <span>$3.000</span>
+          </div>
+          <div class="summary-row summary-total">
+            <span>Total:</span>
+            <span>$175.000</span>
+          </div>
+
+          <button class="checkout-btn">💳 Finalizar compra</button>
+        </div>
+
+        <div class="cart-actions">
+          <a href="productos.html" class="action-btn">🎲 Seguir comprando</a>
+          <a href="contacto.html" class="action-btn">💬 Consultar stock</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Ludi. Todos los derechos reservados.</p>
+        <div class="redes">
+          <a href="https://instagram.com/ludi.juegos" target="_blank">Instagram</a>
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
